@@ -81,7 +81,7 @@ $color-primary: #1c2e60;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
   h1 {
     font-weight: bold;
     margin-bottom: 50px;
@@ -127,6 +127,17 @@ $color-primary: #1c2e60;
   }
 }
 
+.agenda {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+  .card {
+    margin-top: 10px;
+    width: 32%;
+    height: auto;
+  }
+}
+
 @media (max-width: 768px) {
   .jumbotron {
     .title {
@@ -155,8 +166,10 @@ $color-primary: #1c2e60;
     }
   }
   .tentang {
+    width: 100%;
+    height: auto;
     margin-top: 150px;
-    margin-bottom: 150px;
+    margin-bottom: 400px;
     display: block;
     p {
       margin-top: 10px;
@@ -195,6 +208,21 @@ $color-primary: #1c2e60;
             font-size: 20px;
           }
         }
+      }
+    }
+  }
+  .agenda {
+    color: $color-primary;
+    h2 {
+      font-weight: bold;
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+    .card {
+      margin-bottom: 50px;
+
+      .card-header {
+        background-color: orange;
       }
     }
   }

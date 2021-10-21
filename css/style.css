@@ -95,7 +95,7 @@ html {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 .tentang h1 {
@@ -164,6 +164,21 @@ html {
   margin-left: 5px;
 }
 
+.agenda {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 100px;
+}
+
+.agenda .card {
+  margin-top: 10px;
+  width: 32%;
+  height: auto;
+}
+
 @media (max-width: 768px) {
   .jumbotron .title {
     width: 100%;
@@ -194,8 +209,10 @@ html {
     display: none;
   }
   .tentang {
+    width: 100%;
+    height: auto;
     margin-top: 150px;
-    margin-bottom: 150px;
+    margin-bottom: 400px;
     display: block;
   }
   .tentang p {
@@ -239,6 +256,20 @@ html {
     display: inline-block;
     font-weight: 500;
     font-size: 20px;
+  }
+  .agenda {
+    color: #1c2e60;
+  }
+  .agenda h2 {
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  .agenda .card {
+    margin-bottom: 50px;
+  }
+  .agenda .card .card-header {
+    background-color: orange;
   }
 }
 /*# sourceMappingURL=style.css.map */
