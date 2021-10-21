@@ -179,6 +179,23 @@ html {
   height: auto;
 }
 
+.mentor {
+  margin-bottom: 100px;
+}
+
+.mentor .card-animate .card {
+  height: auto;
+  border: none;
+}
+
+.mentor .card-animate .card img {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  display: block;
+  margin: auto;
+}
+
 @media (max-width: 768px) {
   .jumbotron .title {
     width: 100%;
@@ -259,6 +276,7 @@ html {
   }
   .agenda {
     color: #1c2e60;
+    display: block;
   }
   .agenda h2 {
     font-weight: bold;
@@ -267,9 +285,21 @@ html {
   }
   .agenda .card {
     margin-bottom: 50px;
+    width: 100%;
   }
   .agenda .card .card-header {
     background-color: orange;
+  }
+  .mentor {
+    color: #1c2e60;
+  }
+  .mentor h2 {
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-size: 30px;
+  }
+  .mentor .card .card-body h5 {
+    font-weight: bold;
   }
 }
 /*# sourceMappingURL=style.css.map */

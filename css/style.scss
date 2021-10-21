@@ -138,6 +138,23 @@ $color-primary: #1c2e60;
   }
 }
 
+.mentor {
+  margin-bottom: 100px;
+  .card-animate {
+    .card {
+      height: auto;
+      border: none;
+      img {
+        width: 150px;
+        height: 150px;
+        border-radius: 100%;
+        display: block;
+        margin: auto;
+      }
+    }
+  }
+}
+
 @media (max-width: 768px) {
   .jumbotron {
     .title {
@@ -213,6 +230,7 @@ $color-primary: #1c2e60;
   }
   .agenda {
     color: $color-primary;
+    display: block;
     h2 {
       font-weight: bold;
       font-size: 30px;
@@ -220,9 +238,24 @@ $color-primary: #1c2e60;
     }
     .card {
       margin-bottom: 50px;
-
+      width: 100%;
       .card-header {
         background-color: orange;
+      }
+    }
+  }
+  .mentor {
+    color: $color-primary;
+    h2 {
+      margin-bottom: 30px;
+      font-weight: bold;
+      font-size: 30px;
+    }
+    .card {
+      .card-body {
+        h5 {
+          font-weight: bold;
+        }
       }
     }
   }
