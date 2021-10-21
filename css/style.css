@@ -46,6 +46,12 @@ html {
 }
 
 .jumbotron .tagline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: auto;
 }
 
@@ -53,6 +59,16 @@ html {
   display: inline-block;
   font-weight: bold;
   color: #142658;
+}
+
+.jumbotron .animate-navigate {
+  width: 100%;
+  height: 150px;
+  padding-top: 100px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 50px;
+  opacity: 0.2;
 }
 
 .jumbotron .image-animate {
@@ -67,22 +83,98 @@ html {
 }
 
 .tentang {
-  margin-top: 150px;
-  margin-bottom: 100px;
   color: #1c2e60;
+  width: 100%;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 100px;
+}
+
+.tentang h1 {
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+.tentang p {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+.tentang #map {
+  width: 50%;
+  height: 350px;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  border-radius: 30px;
+}
+
+.tentang .info {
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+  width: 100%;
+  height: 150px;
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.tentang .info .card {
+  border: none;
+  width: auto;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+}
+
+.tentang .info .card .text {
+  margin-left: 30px;
+}
+
+.tentang .info .card .text h3 {
+  font-weight: bold;
+  font-size: 40px;
+  margin-bottom: -30px;
+}
+
+.tentang .info .card .text span {
+  display: inline-block;
+  font-weight: 500;
+  margin-left: 5px;
 }
 
 @media (max-width: 768px) {
   .jumbotron .title {
     width: 100%;
-    height: 150px;
+    height: 250px;
   }
   .jumbotron .tagline {
     margin-top: 50px;
-    margin-left: 10px;
-    margin-right: 10px;
-    border: 3px solid orange;
     padding: 5px;
+  }
+  .jumbotron .tagline h2 {
+    font-size: 30px;
   }
   .jumbotron .animate-navigate {
     width: 100%;
@@ -93,7 +185,6 @@ html {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding-top: 100px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     font-size: 50px;
@@ -101,6 +192,53 @@ html {
   }
   .jumbotron .image-animate {
     display: none;
+  }
+  .tentang {
+    margin-top: 150px;
+    margin-bottom: 150px;
+    display: block;
+  }
+  .tentang p {
+    margin-top: 10px;
+  }
+  .tentang #map {
+    margin-top: 30px;
+    width: 100%;
+    height: 250px;
+    margin-bottom: 50px;
+  }
+  .tentang .info {
+    width: 100%;
+  }
+  .tentang .info .card {
+    border-radius: 10px;
+    -webkit-box-shadow: -2px 0px 5px 0px rgba(0, 0, 0, 0.37);
+            box-shadow: -2px 0px 5px 0px rgba(0, 0, 0, 0.37);
+    width: 100%;
+    height: 150px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 10px;
+    padding-left: 10px;
+    border: none;
+  }
+  .tentang .info .card img {
+    margin-top: 10px;
+  }
+  .tentang .info .card .text {
+    width: auto;
+    height: auto;
+  }
+  .tentang .info .card .text h3 {
+    font-weight: bold;
+    font-size: 45px;
+    margin-bottom: -20px;
+  }
+  .tentang .info .card .text span {
+    display: inline-block;
+    font-weight: 500;
+    font-size: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */
