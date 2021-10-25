@@ -1,10 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&display=swap');
-html {
+
+$color-primary: #1c2e60;
+* {
   margin: 0;
   padding: 0;
+}
+html {
   font-family: 'Montserrat', sans-serif;
 }
-$color-primary: #1c2e60;
 
 .navbar {
   display: block;
@@ -95,8 +98,28 @@ $color-primary: #1c2e60;
     order: 1;
     border-radius: 30px;
   }
-  .info {
+  .visimisi {
     order: 3;
+    width: 100%;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    h2 {
+      font-weight: bold;
+      font-size: 35px;
+      margin-bottom: 20px;
+    }
+    p,
+    i {
+      font-size: 30px;
+    }
+    .misi {
+      li {
+        font-size: 20px;
+      }
+    }
+  }
+  .info {
+    order: 4;
     width: 100%;
     height: 150px;
     margin-top: 50px;
@@ -128,6 +151,7 @@ $color-primary: #1c2e60;
 }
 
 .agenda {
+  color: $color-primary;
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 100px;
@@ -140,6 +164,7 @@ $color-primary: #1c2e60;
 
 .mentor {
   margin-bottom: 100px;
+  color: $color-primary;
   .card-animate {
     .card {
       height: auto;
@@ -152,6 +177,118 @@ $color-primary: #1c2e60;
         margin: auto;
       }
     }
+  }
+}
+
+.coretan {
+  width: 100%;
+  justify-content: start;
+  margin-bottom: 50px;
+  color: $color-primary;
+  .card {
+    width: 100%;
+    height: 220px;
+    border: none;
+    margin-top: 20px;
+    img {
+      width: 30%;
+      height: auto;
+    }
+
+    .card-body {
+      a,
+      h5 {
+        display: block;
+        text-decoration: none;
+        font-size: 24px;
+        color: $color-primary;
+        margin-left: 0;
+      }
+    }
+  }
+  a,
+  button.btn-more {
+    text-decoration: none;
+    display: block;
+    width: 250px;
+    height: 50px;
+    margin-top: 20px;
+    margin-left: 30%;
+  }
+}
+
+.dokumentasi {
+  color: $color-primary;
+  h2 {
+    font-weight: bold;
+  }
+  .video {
+    margin-top: 50px;
+    h3 {
+      margin-bottom: 50px;
+    }
+    .card {
+      height: 350px;
+      display: block;
+      margin: auto;
+    }
+
+    .btn {
+      display: block;
+      width: 150px;
+      height: 50px;
+      margin: auto;
+      margin-top: 50px;
+    }
+  }
+  .foto {
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    box-sizing: border-box;
+    .foto-animate {
+      padding-top: 40px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      .card {
+        width: 420px;
+        height: 220px;
+        display: flex;
+        justify-content: center;
+        border: none;
+        img {
+          width: 420px;
+          height: 220px;
+          display: block;
+          margin: auto;
+        }
+      }
+    }
+    .btn {
+      display: block;
+      width: 150px;
+      height: 50px;
+      margin: auto;
+      margin-top: 50px;
+    }
+  }
+}
+
+.footer {
+  width: 100%;
+  height: 270px;
+  background-color: $color-primary;
+  color: white;
+  padding-top: 20px;
+  h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
   }
 }
 
@@ -196,6 +333,14 @@ $color-primary: #1c2e60;
       width: 100%;
       height: 250px;
       margin-bottom: 50px;
+    }
+    .visi {
+      margin-left: 15px;
+    }
+    .misi {
+      p {
+        font-size: 30px;
+      }
     }
     .info {
       width: 100%;
@@ -257,6 +402,61 @@ $color-primary: #1c2e60;
           font-weight: bold;
         }
       }
+    }
+  }
+  .coretan {
+    margin-bottom: 50px;
+    justify-content: center;
+    .card {
+      border: none;
+      margin-top: 30px;
+      margin-bottom: 10px;
+      width: 75%;
+      height: 375px;
+      a {
+        text-decoration: none;
+        color: #142658;
+      }
+
+      .card-title {
+        margin-top: -20px;
+      }
+    }
+
+    a,
+    button {
+      display: block;
+      width: 250px;
+      height: 30px;
+      text-decoration: none;
+      margin: auto;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      margin-left: 5%;
+    }
+  }
+
+  .dokumentasi {
+    .video {
+      .card {
+        width: 80%;
+      }
+    }
+    .foto {
+      .foto-animate {
+        display: flex;
+        .card {
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+
+  .footer {
+    width: 100%;
+    height: 300px;
+    h2 {
+      margin-bottom: 20px;
     }
   }
 }

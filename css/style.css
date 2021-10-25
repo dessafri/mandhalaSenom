@@ -1,7 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&display=swap");
-html {
+* {
   margin: 0;
   padding: 0;
+}
+
+html {
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -118,10 +121,35 @@ html {
   border-radius: 30px;
 }
 
-.tentang .info {
+.tentang .visimisi {
   -webkit-box-ordinal-group: 4;
       -ms-flex-order: 3;
           order: 3;
+  width: 100%;
+  margin-top: 50px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.tentang .visimisi h2 {
+  font-weight: bold;
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+.tentang .visimisi p,
+.tentang .visimisi i {
+  font-size: 30px;
+}
+
+.tentang .visimisi .misi li {
+  font-size: 20px;
+}
+
+.tentang .info {
+  -webkit-box-ordinal-group: 5;
+      -ms-flex-order: 4;
+          order: 4;
   width: 100%;
   height: 150px;
   margin-top: 50px;
@@ -165,6 +193,7 @@ html {
 }
 
 .agenda {
+  color: #1c2e60;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -181,6 +210,7 @@ html {
 
 .mentor {
   margin-bottom: 100px;
+  color: #1c2e60;
 }
 
 .mentor .card-animate .card {
@@ -194,6 +224,141 @@ html {
   border-radius: 100%;
   display: block;
   margin: auto;
+}
+
+.coretan {
+  width: 100%;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  margin-bottom: 50px;
+  color: #1c2e60;
+}
+
+.coretan .card {
+  width: 100%;
+  height: 220px;
+  border: none;
+  margin-top: 20px;
+}
+
+.coretan .card img {
+  width: 30%;
+  height: auto;
+}
+
+.coretan .card .card-body a,
+.coretan .card .card-body h5 {
+  display: block;
+  text-decoration: none;
+  font-size: 24px;
+  color: #1c2e60;
+  margin-left: 0;
+}
+
+.coretan a,
+.coretan button.btn-more {
+  text-decoration: none;
+  display: block;
+  width: 250px;
+  height: 50px;
+  margin-top: 20px;
+  margin-left: 30%;
+}
+
+.dokumentasi {
+  color: #1c2e60;
+}
+
+.dokumentasi h2 {
+  font-weight: bold;
+}
+
+.dokumentasi .video {
+  margin-top: 50px;
+}
+
+.dokumentasi .video h3 {
+  margin-bottom: 50px;
+}
+
+.dokumentasi .video .card {
+  height: 350px;
+  display: block;
+  margin: auto;
+}
+
+.dokumentasi .video .btn {
+  display: block;
+  width: 150px;
+  height: 50px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.dokumentasi .foto {
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.dokumentasi .foto .foto-animate {
+  padding-top: 40px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.dokumentasi .foto .foto-animate .card {
+  width: 420px;
+  height: 220px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: none;
+}
+
+.dokumentasi .foto .foto-animate .card img {
+  width: 420px;
+  height: 220px;
+  display: block;
+  margin: auto;
+}
+
+.dokumentasi .foto .btn {
+  display: block;
+  width: 150px;
+  height: 50px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.footer {
+  width: 100%;
+  height: 270px;
+  background-color: #1c2e60;
+  color: white;
+  padding-top: 20px;
+}
+
+.footer h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.footer img {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
 }
 
 @media (max-width: 768px) {
@@ -240,6 +405,12 @@ html {
     width: 100%;
     height: 250px;
     margin-bottom: 50px;
+  }
+  .tentang .visi {
+    margin-left: 15px;
+  }
+  .tentang .misi p {
+    font-size: 30px;
   }
   .tentang .info {
     width: 100%;
@@ -300,6 +471,55 @@ html {
   }
   .mentor .card .card-body h5 {
     font-weight: bold;
+  }
+  .coretan {
+    margin-bottom: 50px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .coretan .card {
+    border: none;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    width: 75%;
+    height: 375px;
+  }
+  .coretan .card a {
+    text-decoration: none;
+    color: #142658;
+  }
+  .coretan .card .card-title {
+    margin-top: -20px;
+  }
+  .coretan a,
+  .coretan button {
+    display: block;
+    width: 250px;
+    height: 30px;
+    text-decoration: none;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 5%;
+  }
+  .dokumentasi .video .card {
+    width: 80%;
+  }
+  .dokumentasi .foto .foto-animate {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .dokumentasi .foto .foto-animate .card {
+    margin-left: 10px;
+  }
+  .footer {
+    width: 100%;
+    height: 300px;
+  }
+  .footer h2 {
+    margin-bottom: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */
