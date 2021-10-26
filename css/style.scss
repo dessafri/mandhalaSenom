@@ -196,6 +196,7 @@ html {
     }
 
     .card-body {
+      margin-top: -30px;
       a,
       h5 {
         display: block;
@@ -225,12 +226,21 @@ html {
   .video {
     margin-top: 50px;
     h3 {
-      margin-bottom: 50px;
+      margin-bottom: 20px;
     }
-    .card {
-      height: 350px;
-      display: block;
-      margin: auto;
+    .video-animate {
+      width: 100%;
+      height: auto;
+      .card {
+        height: 400px;
+        display: block;
+        margin: auto;
+        border: none;
+        iframe {
+          display: block;
+          margin: auto;
+        }
+      }
     }
 
     .btn {

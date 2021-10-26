@@ -247,6 +247,10 @@ html {
   height: auto;
 }
 
+.coretan .card .card-body {
+  margin-top: -30px;
+}
+
 .coretan .card .card-body a,
 .coretan .card .card-body h5 {
   display: block;
@@ -279,11 +283,22 @@ html {
 }
 
 .dokumentasi .video h3 {
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
-.dokumentasi .video .card {
-  height: 350px;
+.dokumentasi .video .video-animate {
+  width: 100%;
+  height: auto;
+}
+
+.dokumentasi .video .video-animate .card {
+  height: 400px;
+  display: block;
+  margin: auto;
+  border: none;
+}
+
+.dokumentasi .video .video-animate .card iframe {
   display: block;
   margin: auto;
 }

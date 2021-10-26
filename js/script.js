@@ -72,6 +72,36 @@ $('.foto-animate').slick({
     },
   ],
 })
+$('.video-animate').slick({
+  autoplay: true,
+  infinite: true,
+  autoplaySpeed: 1700,
+  centerMode: true,
+  centerPadding: '10px',
+  slidesToShow: 1,
+  arrows: false,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 1,
+      },
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '100px',
+        slidesToShow: 1,
+        leftMargin: '10px',
+      },
+    },
+  ],
+})
 let map = () => {
   mapboxgl.accessToken =
     'pk.eyJ1IjoiZGVzc2FmcmkiLCJhIjoiY2t1emVlNjh6MDN2NTJ2cGF6d2pveHdrcCJ9.Mw1HrmGLNs7rn0OHjIgNhA'
